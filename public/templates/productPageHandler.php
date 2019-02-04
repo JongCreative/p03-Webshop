@@ -1,14 +1,14 @@
 <?php
 
-    //destination.PHP
-
     include "../db_connection.php";
+ 
+    $product_id = $_GET['product_id']; 
 
-    $sql_querie = "SELECT * FROM products";
+    $sql = "SELECT * FROM products WHERE product_id = '$product_id'";
     
-    $db_result = $conn->query($sql_querie);
-
-    foreach ($db_result as $row) {
+    $data = $conn->query($sql);
+  
+     foreach ($data as $row) {
         echo '<section class="wrapper-products3 wrapper-products3-' . $row['product_brand'] . '">' .
              '<a class="product" href="productpage.php?product_id=' . $row['product_id'] . '">' .
              '<img class="product" src="img/' . $row['product_img_urla_tilted'] . '.jpg' . '" alt="' . $row['product_model'] . '"/></a>' .
@@ -17,5 +17,5 @@
              '</section>';
     }
 
-    $conn = null;
+    $conn = null;    
 ?>

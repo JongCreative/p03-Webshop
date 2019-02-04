@@ -11,9 +11,7 @@
 <!--START BODY.
 ------------------------------------------------------------>
 <main>
-    <div class="flex"> 
-         <?php include "productpage2.php"; ?>
-    </div>
+         <?php include "templates/productPageHandler.php"; ?>
 </main>
 
 <!--END BODY.

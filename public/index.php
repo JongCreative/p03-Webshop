@@ -1,30 +1,9 @@
-<!--START HEAD.
+<!--START HEAD & HEADER.
 ------------------------------------------------------------>
 	<?php include "templates/head.php"; ?>
-
-<!--END HEAD.
------------------------------------------------------------->
-
-
-
-<!--START HEADER.
------------------------------------------------------------->
 	<?php include "templates/header.php"; ?>
 
-<!--END HEADER.
------------------------------------------------------------->
-
-
-
-<!--START POP-UP MODELS.
------------------------------------------------------------->
-	<!-- register -->
-	<?php include "templates/modelRegister.php"; ?>
-
-	<!-- login -->
-	<?php include "templates/modelLogin.php"; ?>
-    
-<!--END POP-UP MODELS.
+<!--END HEAD & HEADER.
 ------------------------------------------------------------>
 
 
@@ -32,11 +11,23 @@
 <!--START BODY.
 ------------------------------------------------------------>
 <main>
-	<ul>
-		<li><a href="filter.php"><strong>filter</strong></a>- add info</li>
-		<li><a href="signup.php"><strong>signup</strong></a>- find info</li>
-	</ul>
+	<article class="container container-index">
+		<section class="wrapper wrapper-index1">
+			<div class="section2">
+				<h2>HOMEPAGE</h2>
+				<p>ghrekgkjdrg</p>
+			</div>
+			<div class="section2 maincontainer">
+				<h2>jrglkjdf</h2>
+				<p>gmrdegndkjgn</p>
+			</div>
+		</section>
+		<section class="wrapper wrapper-index2">
+			<ul class="wrapper-list">
 
+			</ul>
+		</section>
+	</article>
 </main>
 
 <!--END BODY.

@@ -1,0 +1,213 @@
+
+/* START GLOBAL STYLE.
+________________________________________________________*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* END GLOBAL STYLE.
+________________________________________________________*/
+
+
+
+/* START GLOBAL STYLE HEADER.
+________________________________________________________*/
+
+/* --------------------- */
+/* NAVIGATION BAR.       */
+/* --------------------- */
+
+.nav-container {
+    padding: 40px;
+    min-height: 50px;
+}
+.nav-list {
+    color: whitesmoke;
+    position: absolute;
+    z-index: 100;
+    float: left;
+    list-style: none;
+}
+.nav-link {
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-weight: 800;
+}
+.nav-item {
+    float: left;
+}
+
+/* --------------------- */
+/* BACKGROUND IMG.       */
+/* --------------------- */
+
+.bg-img {
+    background-image: url("../img/bg.png");
+    background-color: #cccccc;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 100px;
+    z-index: -10;
+}
+
+/* END GLOBAL STYLE HEADER.
+________________________________________________________*/
+
+
+
+/* START GLOBAL STYLE BODY.
+________________________________________________________*/
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:80vh;
+    top: 0;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.wrapper {
+    align-items: center;
+    background: #50ddca;
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+label {
+    display: block;
+    margin: 5px 0px;
+}
+input {
+    width: 100%;
+    height: 20px;
+}
+
+/* END GLOBAL STYLE BODY.
+________________________________________________________*/
+
+
+
+
+/* START REGISTRATION FORM.
+________________________________________________________*/
+
+.container-products {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.wrapper-form1 {
+    padding: 40px 40px;
+    margin: 40px auto;
+    max-width: 600px;
+    display: inline block;
+}
+label {
+    display: block;
+    margin: 5px 0px;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 10px 50px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    background-color: #50ddca;
+}
+
+/* END BODY - REGISTRATION FORM.
+________________________________________________________*/
+
+
+
+/* START FILTER LINKS.
+________________________________________________________*/
+
+.filter-links {
+    padding: 10px 22px;
+    border-bottom:1px solid #E4D7D7;
+  }
+  
+  .filter-links li {
+    display: inline-block;
+  }
+  
+  .filter-links li a {
+  
+    color: black;
+    padding-right: 2em;
+    padding-inline-start: 2em;
+    text-decoration: none;
+  }
+
+/* END FILTER LINKS.
+________________________________________________________*/
+
+
+
+/* START PRODUCTS CARD.
+________________________________________________________*/
+.container-product-row {
+    padding: 1px;
+}
+
+.wrapper-products1 {
+    height: 400px;
+    padding: 5px 5px !important;
+    text-decoration: none;
+    color: #444;
+    background-color: #E4D7D7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    transition: all .1s ease-in;
+    /* transition: transform .3s; Animation */
+}
+    .wrapper-products1:hover {
+        top: -2px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(0.3);
+        cursor: pointer;
+    }
+    
+.wrapper-products1 .wrapper-caption {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper-products1 p {
+    flex: 1;
+    line-height: 1.4;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+.product {
+    width: 100%;
+    padding-bottom: 5%;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* END PRODUCTS CARD.
+________________________________________________________*/
+
+
+

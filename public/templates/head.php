@@ -1,5 +1,3 @@
-<!--START HEAD.
------------------------------------------------------------->
 <!doctype html>
 <html>
 	<head>
@@ -9,9 +7,6 @@
 
 		<title>webshop</title>
 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 
     </head>
-    
-<!--END HEAD.
------------------------------------------------------------->

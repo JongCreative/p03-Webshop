@@ -5,11 +5,18 @@
 <!--END HEADER.
 ------------------------------------------------------------>
 
+<!--START REGISTRATION & LOGIN FORM.
+------------------------------------------------------------>
 
+    <?php include "Register.php"; ?>
+	<?php include "Login.php"; ?>
+    
+<!--END REGISTRATION & LOGIN FORM.
+------------------------------------------------------------>
 
 <!--START BODY.
 ------------------------------------------------------------>
-<h2>filter page</h2>
+<h2>products page</h2>
 <a href="index.php">Back to home</a>
     
 <!--END BODY.

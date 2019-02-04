@@ -135,7 +135,14 @@ ________________________________________________________*/
 ________________________________________________________*/
 
 .filter-links {
-    padding: 10px 22px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+    list-style: none;
+    display: block;
+    width: 100%;
+    height:auto;
+    overflow: hidden;
     border-bottom:1px solid #E4D7D7;
   }
   
@@ -158,40 +165,42 @@ ________________________________________________________*/
 
 /* START PRODUCTS CARD.
 ________________________________________________________*/
-.container-product-row {
-    padding: 1px;
+.container-product-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
-
-.wrapper-products1 {
-    height: 400px;
-    padding: 5px 5px !important;
+.wrapper-products3 {
+    max-width: 400px;
+    padding: 5px 5px;
+    margin: auto;
     text-decoration: none;
     color: #444;
-    background-color: #E4D7D7;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    background-color: aquamarine;
 
-    transition: all .1s ease-in;
-    /* transition: transform .3s; Animation */
+    /* transition: all .1s ease-in; */
+    transition: transform .3s; /* Animation */
 }
-    .wrapper-products1:hover {
+    .wrapper-products3:hover {
         top: -2px;
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-        transform: scale(0.3);
+        transform: scale(1.2);
         cursor: pointer;
     }
     
-.wrapper-products1 .wrapper-caption {
+.wrapper-products3 .wrapper-caption {
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.wrapper-products1 p {
+.wrapper-products3 p {
     flex: 1;
     line-height: 1.4;
+}
+p {
     font-size: 12px;
     font-weight: bold;
     color: #999;
@@ -201,6 +210,7 @@ ________________________________________________________*/
 }
 .product {
     width: 100%;
+    height: 100%;
     padding-bottom: 5%;
     background-size: cover;
     background-position: top center;

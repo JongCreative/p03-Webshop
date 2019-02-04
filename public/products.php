@@ -24,7 +24,7 @@
             <li><a href="products09.php">KEF</a></li>
         </ul>
     </article>
-    <article class="container container-product-row">
+    <article class="container0 container-product-row">
         <?php include "templates/productCards.php"; ?>    
 
         <!-- <section class="wrapper wrapper-products1">

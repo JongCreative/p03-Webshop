@@ -11,6 +11,10 @@
 <!--START BODY.
 ------------------------------------------------------------>
 <main>
+
+<?php require "shopping-cartje/cart.php"; ?>
+<?php products();?>
+
     <article class="flex" id="filter">
         <ul class="filter-links">
             <li><a href="products.php">show all</a></li>
@@ -24,8 +28,9 @@
             <li><a href="products09.php">KEF</a></li>
         </ul>
     </article>
-    <article class="container container-product">
-        <?php include "templates/productCards07.php"; ?>    
+    <article class="container0 container-product-row">
+        <?php include "templates/productCards.php"; ?>    
+        <?php include "templates/pages.php"; ?>
 
         <!-- <section class="wrapper wrapper-products1">
             <a class="product" href="#product"><img class="product" src="img/hp01.png" alt="products"/></a>

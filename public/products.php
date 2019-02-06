@@ -11,42 +11,34 @@
 <!--START BODY.
 ------------------------------------------------------------>
 <main>
-    <article class="flex" id="filter">
-        <ul class="filter-links">
-            <li><a href="products.php">show all</a></li>
-            <li><a href="products02.php">Bose</a></li>
-            <li><a href="products03.php">Sony</a></li>
-            <li><a href="products04.php">JBL</a></li>
-            <li><a href="products05.php">AKG</a></li>
-            <li><a href="products06.php">Bang & Olufsen</a></li>
-            <li><a href="products07.php">Beats</a></li>
-            <li><a href="products08.php">Denon</a></li>
-            <li><a href="products09.php">KEF</a></li>
-        </ul>
-    </article>
-    <article class="container0 container-product-row">
-        <?php include "templates/productCards.php"; ?>    
-
-        <!-- <section class="wrapper wrapper-products1">
-            <a class="product" href="#product"><img class="product" src="img/hp01.png" alt="products"/></a>
-            <h3>product name</h3>
-            <p>product description</p>
-        </section>
-        <section class="wrapper wrapper-products1">
-            <a class="product" href="#product"> <img class="product" src="img/hp01.png" alt="products"/> </a>
-        </section>
-        <section class="wrapper wrapper-products1">
-            <a class="product" href="#product"> <img class="product" src="img/hp01.png" alt="products"/> </a>
-        </section>
-        <section class="wrapper wrapper-products1">
-            <a class="product" href="#product"> <img class="product" src="img/hp01.png" alt="products"/> </a>
-        </section>
-        <section class="wrapper wrapper-product2 wrapper-caption">
-            <h3>product name</h3>
-            <p>product description</p>
-        </section> -->
-</article>
-
+    <div class="containerX container-product-filter">
+        <?php include "templates/products-filters.php"; ?>
+    </div>
+    <div class="container-filterCards">
+        <?php include "templates/productCard.php";?>    
+        <?php //include "templates/pages.php";?>
+<!--     
+        <article class="filterCard wrapper-filterCard wrapper-filtercard-bose">
+            <section class="productCart productCart-header">
+                <a class="productCart-imgLink"><img class="productCart-imgLink productCard-img" src="img/B&O01-e.jpg" alt="B&O01-e"/></a>
+            </section>
+            <section class="productCart productCart-body">
+                <h3>product_brand product_model</h3>
+                <p>color: product_color<br/> product_description</p>
+            </section>
+            <section class="productCart productCart-footer">
+                <form class="productCart-footer-form" method="GET" action="cartHandler.php">
+                    <section class="productCart-footer-form-row">
+                        <input type="hidden" name="hidden_line" value="<?php echo$hidden_output?>">
+                        <input type="number" name="product_quantity" min="1" max="10">
+                    </section>
+                    <section class="productCart-footer-form-row">
+                        <button class="btn5 productCart-form-right" type="submit"><h3>add</h3></button>
+                    </section>
+                </form>
+            </section>
+        </article> -->
+    </div>
 </main>
 
 <!--END BODY.
@@ -56,6 +48,7 @@
 
 <!--START FOOTER.
 ------------------------------------------------------------>
+<script src="js/products-filter.js"></script>
     <?php include "templates/footer.php"; ?>
 
 <!--END FOOTER.

@@ -24,8 +24,7 @@
             <li><a href="products09.php">KEF</a></li>
         </ul>
     </article>
-    <article class="container container-product">
-        <?php include "templates/productCards06.php"; ?>    
+    <article class="container container-product">   
 
         <!-- <section class="wrapper wrapper-products1">
             <a class="product" href="#product"><img class="product" src="img/hp01.png" alt="products"/></a>

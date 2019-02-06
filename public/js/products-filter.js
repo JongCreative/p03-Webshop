@@ -1,18 +1,19 @@
 filterSelection("all")
 function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("wrapper-filterCard");
+  let allBrands, i;
+  allBrands = document.getElementsByClassName("wrapper-filterCard");
   if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "showCards");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showCards");
+  // Add the "showCards" class (display:inline-block) to the filtered elements
+  // and remove the "showCards" class from the elements that are not selected
+  for (i = 0; i < allBrands.length; i++) {
+    w3RemoveClass(allBrands[i], "showCards");
+    if (allBrands[i].className.indexOf(c) > -1) w3AddClass(allBrands[i], " showCards");
   }
 }
 
-// Show filtered elements
+// Show filtered elements above
 function w3AddClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -24,7 +25,7 @@ function w3AddClass(element, name) {
 
 // Hide elements that are not selected
 function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -36,11 +37,11 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementsByClassName("wrapper-filter-btn");
-var btns = btnContainer.getElementsByClassName("btn1");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
+let buttonWrapper = document.getElementsByClassName("wrapper-filter-btn");
+let buttons = buttonWrapper.getElementsByClassName("btn1");
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });

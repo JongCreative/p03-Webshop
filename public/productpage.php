@@ -1,5 +1,6 @@
 <!--START HEAD & HEADER.
 ------------------------------------------------------------>
+    <?php session_start(); ?>
     <?php include "templates/head.php"; ?>
 	<?php include "templates/header.php"; ?>
 
@@ -11,7 +12,9 @@
 <!--START BODY.
 ------------------------------------------------------------>
 <main>
-         <?php include "templates/productPageHandler.php"; ?>
+    <div class="container container-filterCards">
+        <?php include "templates/productPageHandler.php"; ?>
+    </div>
 </main>
 
 <!--END BODY.

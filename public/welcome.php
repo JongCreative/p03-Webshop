@@ -1,33 +1,28 @@
 <!--START HEAD & HEADER.
 ------------------------------------------------------------>
-	<?php session_start(); ?>
-	<?php include "templates/head.php"; ?>
+    <?php session_start();?>
+    <?php include "templates/head.php"; ?>
 	<?php include "templates/header.php"; ?>
 
 <!--END HEAD & HEADER.
 ------------------------------------------------------------>
 
 
+
 <!--START BODY.
 ------------------------------------------------------------>
 <main>
-<!-- 	<article class="container container-index">
-		<section class="wrapper wrapper-index1">
-			<div class="section2">
-				<h2>HOMEPAGE</h2>
-				<p>ghrekgkjdrg</p>
-			</div>
-			<div class="section2 maincontainer">
-				<h2>jrglkjdf</h2>
-				<p>gmrdegndkjgn</p>
-			</div>
-		</section>
-		<section class="wrapper wrapper-index2">
-			<ul class="wrapper-list">
-
-			</ul>
-		</section>
-	</article> -->
+	<div class="container container-contact">
+		<article class="wrapper wrapper-form1">
+        <h2>welcome
+        <?php echo $_SESSION['user_firstname']; ?>
+        </h2>
+        <img class="logo-small" src="img/logo.jpg" alt="logo">
+			<form class="form-contact" action="logout.php" method="post">
+				<button class="btn btn-logout" type="submit" name="submit">logout</button>
+			</form>
+		</article>
+    </div>	
 </main>
 
 <!--END BODY.

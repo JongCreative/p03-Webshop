@@ -16,13 +16,12 @@
              '</section>' .
              '<section class="productCart productCart-body">' .
              '<h3>' . $row['product_brand'] . ' ' . $row['product_model'] . '</h3>' .
-             '<p>' . 'color: ' . $row['product_color'] . '<br/>' . $row['product_description'] . '</p>' .
              '</section>'.
              '<section class="productCart productCart-footer">' .
-             '<form class="productCart-footer-form" method="GET" action="cartHandler.php">'.
+             '<form class="productCart-footer-form" method="GET" action="../includes/addToCart.php">'.
              '<section class="productCart-footer-form-row">'.
-             '<input type="hidden" name="hidden_line" value="<?php echo$hidden_output?>">'.
-             '<input type="number" name="product_quantity" min="1" max="10">'.
+             /* '<input type="hidden" name="hidden_line" value="<?php echo$hidden_output?>">'. */
+             '<input type="number" name="id" min="1" max="10">'.
              '</section>'.
              '<section class="productCart-footer-form-row">'.
              '<button class="btn5 productCart-form-right" type="submit"><h3>add</h3></button>'.

@@ -2,9 +2,21 @@
 
     include "../db_connection.php";
  
-    $product_id = $_GET['product_id']; 
+    $user_id = $_SESSION['user_id']; 
 
-    $sql = "SELECT * FROM products WHERE product_id = '$product_id'";
+    $sql = "SELECT      user.user_id,
+                        products.product_id,
+                        products.product_img_urla_tilted,
+                        products.product_brand,
+                        products.product_model,
+                        products.product_price
+
+            FROM        user, products
+            
+            INNER JOIN  orders ON product.product_id = orders.product_id
+            INNER JOIN  user ON orders.user_id = user.user_id
+            WHERE       user.user_id = $user_id
+            ";
     
     $data = $conn->query($sql);
   

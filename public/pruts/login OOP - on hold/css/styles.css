@@ -82,8 +82,7 @@ ________________________________________________________*/
 }
 .wrapper {
     align-items: center;
-    /* background: #50ddca; */
-    background-color: white;
+    background: #50ddca;
     padding: 40px;
     max-width: 600px;
     margin: 50px auto;
@@ -105,7 +104,7 @@ ________________________________________________________*/
 
 
 
-/* START FORM.
+/* START REGISTRATION FORM.
 ________________________________________________________*/
 
 .container-products {
@@ -125,19 +124,14 @@ label {
 }
 
 .btn {
-    width: 100%;
-    text-align: center;
     border-radius: 8px;
-    padding: 0px 50px;
-    letter-spacing: 10px;
+    padding: 10px 50px;
+    letter-spacing: 18px;
     text-transform: uppercase;
     background-color: #50ddca;
 }
-.logo-small{
-    border-radius: 80px;
-}
 
-/* END BODY - FORM.
+/* END BODY - REGISTRATION FORM.
 ________________________________________________________*/
 
 
@@ -215,8 +209,7 @@ ________________________________________________________*/
     justify-content: space-around;
     text-align: center;
     width: 33.33333%;
-    /* background-color: aquamarine; */
-    background-color: white;
+    background-color: aquamarine;
     margin: auto;
     text-decoration: none;
     color: #444;
@@ -269,52 +262,6 @@ ________________________________________________________*/
 
 
 
-/* START PRODUCT CARD SINGLE ITEM.
-________________________________________________________*/
-.wrapper-card-single {
-    display: flex;
-    flex-direction: row;
-}
-.productCart-single1{
-    display: flex;
-    flex-direction: row;
-}
-.productCart-single{
-    flex: 1;
-}
-.card-single {
-    color: #666;
-}
-.positioningPhoto{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.positioningPhoto2{
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-}
-.positioningPhoto-inner {
-    flex: 1;
-    scroll-behavior: smooth;
-}
-.product-single-img {
-    width: 100%;
-    height: auto;
-    padding: 2px;
-    background-size: cover;
-    background-position: top center;
-}
-.input-row {
-    width: 50px;
-}
-
-/* END PRODUCT CARD SINGLE ITEM.
-________________________________________________________*/
-
-
 /* START SHOPPINGCART.
 ________________________________________________________*/
 
@@ -323,37 +270,25 @@ ________________________________________________________*/
     height: auto;
     padding: 1px;
 }
-
 .container-cart {
     background-color: red;
     display: flex;
     flex-direction: row;
-    padding: 1px;
-    }
+    padding: 50px;
+}
 .wrapper-cart {
-    width: 1100px;
-    background-color: white;
+    width: 100%;
+    background-color: yellow;
     display: flex;
     flex-direction: column;
-    padding: 1px;
+    padding: 50px;
 }
 
 .cart {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding: 1px;
     border: #444 1px solid;
-}
-
-.table {
-    flex: 1;
-}
-.table-shop {
-    margin: 0;
-}
-.table7 {
-    flex:2;         /* if 6 rows change to 4 */
 }
 
 .cart-header-address {
@@ -405,3 +340,7 @@ ________________________________________________________*/
  */
 /* END SHOPPINGCART.
 ________________________________________________________*/
+
+.container-logout {
+    flex-direction: column;
+}

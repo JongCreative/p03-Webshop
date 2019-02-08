@@ -1,22 +1,23 @@
-<?php   
-     
-$user_name      = $_POST['user_email'];
+<?php
+  
+$user_email     = $_POST['user_email'];
 $user_password  = $_POST['user_password'];
+$user_firstname = $_POST['user_firstname'];
+$user_lastname  = $_POST['user_lastname'];
 
 include '../../db_connection.php';
 
 try {
-    $sql = 'INSERT INTO customer (`user_name`, `user_password`, `user_firstname`, `user_lastname`, `user_email`)
-            VALUES (:userName, :user_password, :user_firstname, :user_lastname, :user_email)';
+    $sql = 'INSERT INTO user (`user_email`, `user_password`, `user_firstname`, `user_lastname`)
+            VALUES (:user_email, :user_password, :user_firstname, :user_lastname)';
             
     $smt = $conn->prepare($sql);
 
     $smt->execute(array(
-        ':userName'         => $user_name,
+        ':user_email'       => $user_email,
         ':user_password'    => $user_password,
         ':user_firstname'   => $user_firstname,
         ':user_lastname'    => $user_lastname,
-        ':user_email'       => $user_email
         ));
     echo 'Registered successfully';
     }
@@ -26,6 +27,6 @@ catch(PDOException $e)
     }
 
 $conn = null;
-header('location:../index.php');
-
+//header('location:../index.php');
+     
 ?>

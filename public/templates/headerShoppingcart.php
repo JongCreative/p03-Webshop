@@ -5,9 +5,9 @@
 			<img src="img/logo.png" alt="logo">
 		</section>
 		<section class="cart-header cart-header-title">
-			<h2>invoice</h2> 
+			<h2>shoppingcart</h2> 
 		</section>
-		<section class="cart cart-header cart-header-address">
+<!-- 		<section class="cart cart-header cart-header-address">
 			<div class="cart-address address-custommer">
 				<h5>custommer name</h5>
 				<p>custommer address<br/>custommer email</p>
@@ -19,6 +19,6 @@
 		</section>
 		<section class="cart cart-header cart-header-whitespace">
 			<h6>whitespace</h6> 
-		</section>
+		</section> -->
 	</article>
 </section>
